@@ -1,3 +1,5 @@
+import { updateGround } from "./ground";
+
 const WORLD_WIDTH = 100;
 const WORLD_HIGHT = 20;
 
@@ -15,6 +17,8 @@ function update(time){
     }
     const delta = time - lastTime
     // console.log(delta)
+
+    updateGround(delta)
 
     lastTime= time
     window.requestAnimationFrame(update)
