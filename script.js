@@ -17,7 +17,6 @@ function update(time){
         return
     }
     const delta = time - lastTime
-    // console.log(delta)
 
     updateGround(delta)
 
