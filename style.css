@@ -1,61 +1,63 @@
-*, *::after, *::before{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    user-select: none;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
 }
 
-body{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.world{
-    overflow: hidden;
-    position: relative;
+.world {
+  overflow: hidden;
+  position: relative;
 }
 
-.score{
-    position: absolute;
-    top: 1vmin;
-    right: 3vmin;
-    font-size: 5vmin;
+.score {
+  position: absolute;
+  top: 1vmin;
+  right: 3vmin;
+  font-size: 5vmin;
 }
 
-.start-screen{
-    position: absolute;
-    font-size: 5vmin;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-.ground{
-    --left:0;
-    width: 200%;
-    position: absolute;
-    bottom: 0;
-    left: calc(var(--left) * 1%);
+.ground {
+  --left: 0;
+  width: 200%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
 }
 
-.dino{
-    --bottom:0;
-    position: absolute;
-    height: 30%;
-    left: 1%;
-    bottom: calc(var(--bottom) * 1%);
+.dino {
+  --bottom: 0;
+  position: absolute;
+  height: 30%;
+  left: 1%;
+  bottom: calc(var(--bottom) * 1%);
 }
 
-.cactus{
-    position: absolute;
-    height: 30%;
-    bottom: 0;
-    left: calc(var(--left) * 1%);
+.cactus {
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
 }
