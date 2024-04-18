@@ -10,20 +10,20 @@ setupGround();
 window.addEventListener("resize", setPixelToWorldScale);
 
 let lastTime;
-function update(time){
-    if (lastTime == null){
-        lastTime = time
-        window.requestAnimationFrame(update);
-        return
-    }
-    const delta = time - lastTime
+function update(time) {
+  if (lastTime == null) {
+    lastTime = time;
+    window.requestAnimationFrame(update);
+    return;
+  }
+  const delta = time - lastTime;
 
-    updateGround(delta)
+  updateGround(delta);
 
-    lastTime= time
-    window.requestAnimationFrame(update)
+  lastTime = time;
+  window.requestAnimationFrame(update);
 }
-window.requestAnimationFrame(update)
+window.requestAnimationFrame(update);
 
 function setPixelToWorldScale() {
   let worldToPixelScale;
